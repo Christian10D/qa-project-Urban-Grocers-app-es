@@ -8,8 +8,3 @@ Este proyecto automatiza las pruebas para la creación de kits de productos en l
 - Pytest
 - Requests
 
-## Instrucciones para ejecutar las pruebas
-1. Clona este repositorio en tu máquina local.
-2. Instala los requisitos:
-   ```bash
-   pip install -r requirements.txt
