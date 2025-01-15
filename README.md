@@ -1,10 +1,3 @@
-# Proyecto de pruebas para Urban Grocers
-
-## Descripción
-Este proyecto automatiza las pruebas para la creación de kits de productos en la aplicación Urban Grocers, específicamente para verificar la validación del campo `name` en la solicitud de creación.
-
-## Requisitos
-- Python 3.x
-- Pytest
-- Requests
-
+# Pruebas para el parámetro firstName al crear un/a usuario/a en []
+- Necesitas tener instalados los paquetes pytest y request para ejecutar las pruebas.
+- Ejecuta todas las pruebas con el comando pytest.
