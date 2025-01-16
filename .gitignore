@@ -1,3 +1,4 @@
+#.gitgnore
 .pytest/
 venv/
 .idea/
