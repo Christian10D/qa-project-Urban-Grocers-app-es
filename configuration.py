@@ -1,3 +1,4 @@
+#configuration.py
 URL_SERVICE = "https://cnt-dcd9181d-4218-4153-9fc6-449bb77160b8.containerhub.tripleten-services.com"
 DOC_PATH = "/docs/"
 LOG_MAIN_PATH = "/api/logs/main/"
