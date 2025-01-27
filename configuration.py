@@ -1,5 +1,4 @@
-#configuration.py
-URL_SERVICE = "https://cnt-dcd9181d-4218-4153-9fc6-449bb77160b8.containerhub.tripleten-services.com"
+URL_SERVICE = "https://cnt-36c9d2e1-f289-481d-9003-6b86e6d9e3de.containerhub.tripleten-services.com"
 DOC_PATH = "/docs/"
 LOG_MAIN_PATH = "/api/logs/main/"
 USERS_TABLE_PATH = "/api/db/resources/user_model.csv"
