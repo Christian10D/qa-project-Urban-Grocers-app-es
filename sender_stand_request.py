@@ -1,4 +1,3 @@
-#sender_stand_request.py
 import configuration
 import requests
 import data
@@ -12,8 +11,7 @@ print(response.status_code)
 
 
 def get_logs():
-    return requests.get(configuration.URL_SERVICE + configuration.LOG_MAIN_PATH,
-                        params={"count": 20})
+    return requests.get(configuration.URL_SERVICE + configuration.LOG_MAIN_PATH)
 
 response = get_logs()
 print(response.status_code)
@@ -31,15 +29,20 @@ def post_new_user(body):
                          json=body,
                          headers=data.headers)
 
-response = post_new_user(data.user_body);
+response = post_new_user(data.user_body)
 print(response.status_code)
-print(response.json())
+print(response.json()['authToken'])
+token = response.json()['authToken']
+headers2 = {
+    "Content-Type": "application/json",
+    "Authorization": f'Bearer {token}'
+}
 
 def post_products_kits(products_ids):
     # Realiza una solicitud POST para buscar kits por productos.
     return requests.post(configuration.URL_SERVICE + configuration.PRODUCTS_KITS_PATH, # Concatenación de URL base y ruta.
                          json=products_ids, # Datos a enviar en la solicitud.
-                         headers=data.headers) # Encabezados de solicitud.
+                         headers=headers2) # Encabezados de solicitud.
 
 
 response = post_products_kits(data.product_ids);
