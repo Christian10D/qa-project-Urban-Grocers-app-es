@@ -1,4 +1,3 @@
-#data.py
 headers = {
     "Content-Type": "application/json"
 }
@@ -10,4 +9,8 @@ user_body = {
 }
 product_ids = {
     "ids": [1, 2, 3]
+}
+
+kit_body = {
+    "name": ""
 }
