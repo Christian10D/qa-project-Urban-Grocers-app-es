@@ -48,3 +48,6 @@ def post_products_kits(products_ids):
 response = post_products_kits(data.product_ids);
 print(response.status_code)
 print(response.json()) # Muestra del resultado en la consola
+
+def post_new_client_kit(kit_body, auth_token):
+    return requests.post(configuration.URL_SERVICE + configuration.PRODUCTS_KITS_PATH, json=kit_body, headers={**data.headres, "Authorization": f"Bearer {auth_token}"})
